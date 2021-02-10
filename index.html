@@ -1,4 +1,63 @@
 <html>
+  <head>
+    <title>Kontakt Forma</title>  
+  </head>
+  <stile>
+     body {
+         font-family: Arial, Verdana, sans-serif;
+         font-size: 0.8em;
+         background-color:#d3d3d3;
+        }
+    
+      #glavni {
+           margin: 50px auto;
+           border: 5px solid #aec7e4;
+           border-radius: 10px;
+           width: 420px;
+           padding: 10px;
+           background-color: #1d2f97;
+           overflow:auto;
+          }
+    
+    label {
+         display:inline-block;
+         width: 90px;
+         margin-right: 20px;
+         text-align: right;
+         color: white;
+     } 
+    
+       label.ta{
+       vertical-align: top;
+       }
+    
+       input[type], textarea {
+       background-color:#bfd9ed;
+       width: 250px;
+       padding: 10px;
+       margin-bottom: 10px;
+       }
+    
+     input[type]:focus, textarea:focus {
+     background-color: white;
+     outline: 2px solid red;
+     }
+    
+     button {
+     padding: 10px;
+     border-radius: 10px;
+     border:none;
+     background-color:#bfd9ed;
+     }
+    
+     button:hover{
+     color:red;
+     }
+    
+       button:disabled{
+       border:1px solid red;
+       } 
+   </style>
   
   <body>
     <form id="form1" action="/Home/Posalji" method="post">
